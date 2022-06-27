@@ -31,7 +31,7 @@ const Home = () => {
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
             {policy.map((item, index) => (
-              <Link key={index} to="/policy">
+              <Link key={index} to="/catalog">
                 <PolicyCard
                   name={item.name}
                   description={item.description}
@@ -44,9 +44,12 @@ const Home = () => {
       </Section>
 
       {/* end policy section */}
-      <div className="slider">
-        <AppSl />
-      </div>
+      <Section>
+        <div className="slider">
+          <AppSl />
+        </div>
+      </Section>
+
       <h1 className="welcom">Добро пожаловать в магазин OuyFashion!</h1>
       <p className="welcom__p"></p>
       {/* best selling section */}

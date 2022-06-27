@@ -3,19 +3,20 @@
   padding: 20px;
   padding-left: 0;
   box-shadow: $box-shadow;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 
   &:hover {
-    transform: translateY(20%);
+    transform: translateY(-20px);
   }
 
   &__icon {
     @include flex(center, center);
     width: 40%;
-    color: rgb(137, 82, 179);
+    color: $main-color;
 
     i {
       font-size: 3rem;
+      cursor: pointer;
     }
   }
 
@@ -31,7 +32,4 @@
       color: $txt-second-color;
     }
   }
-}
-.policy-card:hover {
-  transform: translateY(-20px);
 }

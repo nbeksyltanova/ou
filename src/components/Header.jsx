@@ -14,7 +14,7 @@ const mainNav = [
   },
   {
     display: "Аксессуары",
-    path: "/accessories",
+    path: "/akes",
   },
   {
     display: "Отзывы",
